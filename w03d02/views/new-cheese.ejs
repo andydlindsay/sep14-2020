@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a new cheese!</title>
+</head>
+<body>
+  <h1>New Cheese!</h1>
+
+  <form method="POST" action="/cheeses">
+    <label>Name:</label>
+    <input type="text" name="name" />
+    <br/>
+    <label>Price:</label>
+    <input type="number" min="0" name="price" />
+    <br/>
+    <label>Age:</label>
+    <input type="number" min="0" name="age" />
+    <br/>
+    <label>Fat %:</label>
+    <input type="number" min="0" name="fat-percentage" />
+    <br/>
+
+    <button type="submit">Add new cheese!</button>
+  </form>
+</body>
+</html>

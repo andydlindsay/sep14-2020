@@ -8,5 +8,20 @@
 <body>
   <h1>One Cheese!</h1>
 
+  <h1>Cheese: <%= cheese.name %></h1>
+  <h2>Price: $<%= cheese.price %></h2>
+  <h2>Age: <%= cheese.age %></h2>
+  <h2>Fat %: <%= cheese.fatPercentage %>%</h2>
+
+  <form method="POST" action="/cheeses/<%= cheeseId %>">
+    <label>New name:</label>
+    <input type="text" name="name" />
+    <br/>
+    <button type="submit">Update Cheese!</button>
+  </form>
+
+  <form method="POST" action="/cheeses/<%= cheeseId %>/delete">
+    <button type="submit">Delete cheese!</button>
+  </form>
 </body>
 </html>
