@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All the Cheese</title>
+</head>
+<body>
+  <h1>All Cheeses!!</h1>
+
+  <% for (const cheeseId in cheeses) { %>
+    <div class="cheese">
+      <h2>Name: <%= cheeses[cheeseId].name %></h2>
+      <h2>Price: $<%= cheeses[cheeseId].price %></h2>
+    </div>
+  <% } %>  
+</body>
+</html>
