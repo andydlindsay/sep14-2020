@@ -1,9 +1,17 @@
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+// import Visitors from './components/Visitors';
+import Pizza from './components/Pizza';
 
 const App = () => {
+  const [heading] = useState(`Pat's Pizza Place`);
+
   return (
     <div className="App">
-      <h2>W07D02 - Immutable Update Patterns</h2>
+      <Header webpageTitle={heading} anotherKey="something" />
+      {/* <Visitors /> */}
+      <Pizza />
     </div>
   );
 };
