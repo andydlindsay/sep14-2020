@@ -2,25 +2,33 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const useRequest = (url) => {
-  const [data, setData] = useState({});
-  const [loading, setLoading] = useState(true);
-  const [errorMsg, setErrorMsg] = useState('');
+  const [request, setRequest] = useState({
+    data: {},
+    loading: true,
+    errorMsg: ''
+  });
 
   useEffect(() => {
     axios.get(url)
       .then(result => {
-        setLoading(false);
-        setData(result.data);
-        setErrorMsg('');
+        setRequest(prev => ({
+          ...prev,
+          loading: false,
+          data: result.data,
+          errorMsg: ''
+        }));
       })
       .catch(err => {
         console.log(err);
-        setErrorMsg('Error loading data');
-        setLoading(false);
+        setRequest(prev => ({
+          ...prev,
+          loading: false,
+          errorMsg: 'Error loading data'
+        }));
       });
   });
 
-  return { data, loading, errorMsg };
+  return request;
 };
 
 export default useRequest;
