@@ -3,8 +3,8 @@ import './App.css';
 // import Mouse from './components/Mouse';
 // import Input from './components/Input';
 // import Location from './components/Location';
-// import Request from './components/Request';
-import KeyPress from './components/KeyPress';
+import Request from './components/Request';
+// import KeyPress from './components/KeyPress';
 
 const App = () => {
   return (
@@ -14,8 +14,8 @@ const App = () => {
       {/* <Mouse /> */}
       {/* <Input /> */}
       {/* <Location /> */}
-      {/* <Request /> */}
-      <KeyPress />
+      <Request />
+      {/* <KeyPress /> */}
     </div>
   );
 };
