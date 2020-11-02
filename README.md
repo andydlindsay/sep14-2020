@@ -8,3 +8,4 @@
 * [W07D02 - Immutable Update Patterns](https://github.com/andydlindsay/sep14-2020/tree/master/w07d02)
 * [W07D04 - Custom Hooks](https://github.com/andydlindsay/sep14-2020/tree/master/w07d04)
 * [W08D01 - Unit & Integration Testing](https://github.com/andydlindsay/sep14-2020/tree/master/w08d01)
+* [W08D03 - End-to-End Testing with Cypress](https://github.com/andydlindsay/sep14-2020/tree/master/w08d03)
