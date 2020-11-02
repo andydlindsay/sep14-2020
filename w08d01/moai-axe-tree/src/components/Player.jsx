@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { announceResult } from '../helpers/helpers';
 
 const Player = (props) => {
-  const {playerSelection, compSelection, cheating} = props.state;
+  const {playerSelection, compSelection} = props.state;
   const {setState} = props;
   const options = [
     ['Moai', '🗿'],
