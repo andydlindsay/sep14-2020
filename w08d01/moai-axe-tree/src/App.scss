@@ -26,12 +26,23 @@ header, footer{
     font-size:4em;
     margin:0;
   }
+  a {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+  }
 }
 
 main.game{
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
-  margin-bottom:10vh;
+  margin-bottom: 10vh;
+}
+
+main.high-scores{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70vh;
 }
 
 section.player, section.computer{
@@ -66,4 +77,8 @@ section.computer > span{
   &.cheating{
     opacity: 1;
   }
+}
+
+.underline {
+  text-decoration: underline;
 }
