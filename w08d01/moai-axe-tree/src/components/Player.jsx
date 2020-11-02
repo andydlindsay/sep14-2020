@@ -22,7 +22,7 @@ const Player = (props) => {
       const compSelection = 'Moai';
       setState(prevState => ({ ...prevState, compSelection }));
     }
-  }, [playerSelection, cheating, setState]);
+  }, [playerSelection, setState]);
 
   const resetState = () => {
     setState(prevState => ({
