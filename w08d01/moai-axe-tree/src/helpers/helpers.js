@@ -28,3 +28,18 @@ export const genFeedbackMessage = (status) => {
       return 'Waiting for your choice!';
   }
 };
+
+export const chooseRobotItem = (cheating, playerSelection) => {
+  if (cheating) {
+    const lookup = {
+      Moai: 'Tree',
+      Axe: 'Moai',
+      Tree: 'Axe'
+    }
+    return lookup[playerSelection];
+  }
+
+  const options = ['Moai', 'Axe', 'Tree'];
+  const randomIndex = Math.floor(Math.random() * options.length);
+  return options[randomIndex];
+};
