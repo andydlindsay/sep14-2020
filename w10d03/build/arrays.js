@@ -1,0 +1,10 @@
+"use strict";
+const numbers = [true, false, 'bye'];
+numbers.push(true);
+numbers.push(true);
+numbers.push(true);
+numbers.push('hello');
+const nestedArray = [];
+nestedArray.push(['hello']);
+// nestedArray.push(true);
+nestedArray.push([7]);
