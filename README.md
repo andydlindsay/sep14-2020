@@ -11,4 +11,4 @@
 * [W08D03 - End-to-End Testing with Cypress](https://github.com/andydlindsay/sep14-2020/tree/master/w08d03)
 * [W10D03 - Intro to TypeScript](https://github.com/andydlindsay/sep14-2020/tree/master/w10d03)
 * [W10D04 - Final Project Kickoff](https://github.com/andydlindsay/sep14-2020/tree/master/w10d04)
-* [BREAKOUT - Heroku Deployment](https://github.com/andydlindsay/sep14-2020/tree/master/breakout-heroku-deployment)
+* [BREAKOUT - Heroku Deployment](https://github.com/andydlindsay/sep14-2020-heroku)
